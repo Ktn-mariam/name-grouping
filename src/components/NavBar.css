@@ -1,0 +1,28 @@
+.nav {
+  background-color: #1d3557;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.home {
+  color: #e63946;
+}
+
+.link {
+  text-decoration: none;
+  color: #f1faee;
+  align-items: center;
+  padding-top: 6px;
+  transition: all 400ms ease;
+}
+
+.link:hover {
+  color: #a8dadc;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableColumn {
+  text-align: center;
+}
+
+.button {
+  padding: 15px;
+}
+
+.search {
+  padding-bottom: 0px;
+}

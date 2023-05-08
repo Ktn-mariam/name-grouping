@@ -27,7 +27,7 @@ function Home() {
             onChange={inputChangeHandler}
             type="text"
           />
-          <button>Search</button>
+          <button>SEARCH</button>
         </div>
         <ul>
           {names

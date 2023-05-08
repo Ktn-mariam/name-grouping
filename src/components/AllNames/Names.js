@@ -1,5 +1,3 @@
-import React, { useRef } from 'react'
-import Search from './Search'
 import './Names.css'
 import Button from '@mui/material/Button'
 

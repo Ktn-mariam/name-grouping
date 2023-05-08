@@ -16,25 +16,37 @@ function Home() {
   const inputRef = useRef('')
 
   return (
-    <>
-      <h1>Welcome Mariam!</h1>
-      <input ref={inputRef} onChange={inputChangeHandler} type="text" />
-      <button>Click me</button>
-      <ul>
-        {names
-          .filter((name) => {
-            return (
-              name.first_name
-                .toLowerCase()
-                .includes(inputValue.toLowerCase()) ||
-              name.last_name.toLowerCase().includes(inputValue.toLowerCase())
-            )
-          })
-          .map((name, index) => {
-            return <li key={index}>{`${name.first_name} ${name.last_name}`}</li>
-          })}
-      </ul>
-    </>
+    <div className="center">
+      <h1>Welcome!</h1>
+      <h3>Search a Name:</h3>
+      <div className="center">
+        <div className="align">
+          <input
+            className="searchbar"
+            ref={inputRef}
+            onChange={inputChangeHandler}
+            type="text"
+          />
+          <button>Search</button>
+        </div>
+        <ul>
+          {names
+            .filter((name) => {
+              return (
+                name.first_name
+                  .toLowerCase()
+                  .includes(inputValue.toLowerCase()) ||
+                name.last_name.toLowerCase().includes(inputValue.toLowerCase())
+              )
+            })
+            .map((name, index) => {
+              return (
+                <li key={index}>{`${name.first_name} ${name.last_name}`}</li>
+              )
+            })}
+        </ul>
+      </div>
+    </div>
   )
 }
 

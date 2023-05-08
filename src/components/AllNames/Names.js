@@ -9,22 +9,6 @@ function Names(props) {
       <table>
         <thead>
           <tr>
-            <Search ph={'Search by First Name'} />
-            <Search ph={'Search by Last Name'} />
-          </tr>
-        </thead>
-        <thead>
-          <tr>
-            <th className="button search">
-              <Button variant="outlined">Search</Button>
-            </th>
-            <th className="button search">
-              <Button variant="outlined">Search</Button>
-            </th>
-          </tr>
-        </thead>
-        <thead>
-          <tr>
             <th className="button">
               <Button onClick={props.firstNameSort} variant="contained">
                 Order by First Name
